@@ -66,10 +66,34 @@ Pancake排序   `O(n)`
 
 Stooge排序  `O(n^2.7)`   
 
-$\sqrt{3x-1}+(1+x)^2$ is an example of a $\LaTeX$ inline equation.he Lorenz Equations:
-$$\begin{aligned}\dot{x} & = \sigma(y-x) \\\dot{y} & = \rho x - y - xz \\\dot{z} & = -\beta z + xy\end{aligned}$$
+#### 冒泡排序 `O(n^2)`  
 
-作者：luke_bei_
-链接：https://www.jianshu.com/p/23b02c1708ae
-來源：简书
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+```python
+def bubblesort(self, array : list) -> list:
+      '''
+      冒泡排序,时间复杂度`O(n^2)`
+
+      Args
+      ====
+      `array` : 排序前的数组
+
+      Return
+      ======
+      `sortedArray` : 使用冒泡排序排好的数组
+
+      Example
+      ===
+      ```python
+      >>> import sort
+      >>> A = [6, 5, 4, 3, 2, 1]
+      >>> sort.bubblesort(A)
+      >>> [1, 2, 3, 4, 5, 6]
+      ```
+      '''
+      nums = _deepcopy(array)
+      for i in range(len(nums) - 1):    
+          for j in range(len(nums) - i - 1):  
+              if nums[j] > nums[j + 1]:
+                  nums[j], nums[j + 1] = nums[j + 1], nums[j]
+      return nums
+```
