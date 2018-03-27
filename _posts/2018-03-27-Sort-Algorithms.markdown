@@ -66,4 +66,10 @@ Pancake排序   `O(n)`
 
 Stooge排序  `O(n^2.7)`   
 
-$$\bf{\beta = HT}$$
+$\sqrt{3x-1}+(1+x)^2$ is an example of a $\LaTeX$ inline equation.he Lorenz Equations:
+$$\begin{aligned}\dot{x} & = \sigma(y-x) \\\dot{y} & = \rho x - y - xz \\\dot{z} & = -\beta z + xy\end{aligned}$$
+
+作者：luke_bei_
+链接：https://www.jianshu.com/p/23b02c1708ae
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。

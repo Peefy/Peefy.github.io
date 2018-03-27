@@ -25,10 +25,10 @@ sass:
 # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: /
 title: V
-description: "V is my learning record."
-keywords: 'jekyll,theme,gem-based,blog'
+description: "Welcome to the blog of Peefy"
+keywords: 'jekyll,theme,gem-based,blog,peefy'
 author:
-  name: KAI
+  name: Peefy
   job_title:
   location:
   email: xpf6677@163.com
@@ -48,13 +48,13 @@ author:
     - name: vk
       url:
 home:
-  section1: <h1>V</h1>
-  section2: <h2>V is my learning record.</h2>
+  section1: <h1>Peefy</h1>
+  section2: <h2>Welcome to the blog of Peefy</h2>
  #section3: <div class="social-links"><a class="ico-github btn" href="https://github.com/bryceyang/bryceyang.github.io" title="View on GitHub"></a></div>
 blog:
   cc_license:  http://creativecommons.org/licenses/by-sa/4.0/
   cc_license_image: /assets/images/theme/cc-by-sa.png
-  footer_content: V is my learning record.
+  footer_content: Welcome to the blog of Peefy
 
 disqus:
   shortname: bryceyang
