@@ -21,7 +21,7 @@ sass:
   style: compressed
 
 # Site Data
-  url: "https://bryceyang.github.io" 
+  url: "https://peefy.github.io" 
 # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: /
 title: V
@@ -31,12 +31,12 @@ author:
   name: KAI
   job_title:
   location:
-  email: yaakire@gmail.com
+  email: xpf6677@163.com
   social_links:
     - name: facebook
       url:
     - name: github
-      url: https://github.com/bryceyang
+      url: https://github.com/Peefy
     - name: instagram
       url:
     - name: linkedin
