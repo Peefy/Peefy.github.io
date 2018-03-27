@@ -1,0 +1,116 @@
+---
+layout: post
+title: "简易爬虫：爬取豆瓣电影top250"
+description: "First network spider!!"
+categories: [python]
+tags: [spider]
+redirect_from:
+  - /2017/11/09/
+---
+
+* Kramdown table fo contents
+{:toc .toc}
+
+---
+
+## 爬虫目的说明：
+
+此爬虫简单到不能再简单了，主要内容就是爬取豆瓣top250电影页面的内容，然后将该内容导入了数据库。下面先上结果图：
+
+![mysql_spider](http://oq782gkz3.bkt.clouddn.com/2017-11-09%2016_54_38-movie%20@spider%20%28spider%29%20-%20%E8%A1%A8%20-%20Navicat%20for%20MySQL.png)
+
+## 爬虫部分代码：
+
+```python
+def getlist(listurl, result):
+    time.sleep(2)
+    headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'}
+    res = requests.get(listurl, headers=headers)
+    soup = BeautifulSoup(res.text, 'html.parser')
+    movielist = soup.select('.grid_view li')
+    for m in movielist:
+        rank = m.select('em')[0].text
+        if len(m.select('.title')) > 1:
+            english_name = m.select('.title')[1].text.strip().strip('/').strip()
+        else:
+            english_name = "No info"
+        chinese_name = m.select('.title')[0].text
+        info_str = m.select('.info .bd p')[0].text.strip().replace(u'\xa0', u' ')
+        info_list = info_str.split('\n')
+        time_list = info_list[1].strip().split('/')
+        movie_time = time_list[0].strip()
+        movie_place = time_list[1].strip()
+        movie_type = time_list[2].strip()
+        director_list = info_list[0].strip(u'导演:').split('  ')
+        director = director_list[0].strip()
+        if len(director_list) > 1:
+            main_actor = director_list[1].strip().strip(u"主演:").strip()
+        else:
+            main_actor = u"暂无信息"
+        if m.select('.inq'):
+            comments = m.select('.inq')[0].text.strip()
+        else:
+            comments = 'None'
+        movie.append(u'排名: ' + rank + '\n' + u'电影名: ' + chinese_name + '\n' +  u'导演: ' + director + '\n' +  u'主演: ' +
+                     main_actor + '\n' + u'时间: ' + movie_time + '\n' + u'产地： '+ movie_place + '\n'+ u'类型： '
+                     + movie_type + '\n' + u'评论: ' + comments + '\n')
+        data_movies = (rank, chinese_name, english_name, director, main_actor, movie_time,
+                       movie_place, movie_type, comments)
+        result.append(data_movies)
+
+    #获取下一页        
+    if soup.select(u'.next a'):
+        asoup = soup.select(u'.next a')[0][u'href']
+        Next_page = lurl + asoup
+        getlist(Next_page, result)
+    else:
+        print('Done')
+    return result, movie
+```
+
+返回的`resutl`以及`movie`都是列表，`result`用来存储保存在数据库中的内容，`movie`用来保存写入文件中的内容。之所以分开保存是因为，写入文件的每个元素都要加上诸如”导演“此类的说明词汇，以便于理解;而数据库已经有了列名，所以不需要这些说明词汇。
+
+## 数据库导入部分代码：
+
+```python
+#连接数据库
+db = MySQLdb.connect(host="localhost", user="root", passwd="", db="spider", use_unicode=True, charset="utf8")
+cursor = db.cursor()
+cursor.execute("DROP TABLE IF EXISTS MOVIE")
+sql = """CREATE TABLE MOVIE (
+         RANK INT(4),
+         CHINESE_NAME CHAR(100),
+         ENGLISH_NAME CHAR(100),
+         DIRECTOR CHAR(100),
+         MAIN_ACTORS CHAR(100),
+         TIME CHAR(100),
+         PLACE CHAR(100),
+         TYPE CHAR(100),
+         COMMENT CHAR(100) )"""
+cursor.execute(sql)
+
+lurl = 'https://movie.douban.com/top250'
+movie = []
+result = []
+result, movies = getlist(lurl, result)
+print(len(result))
+#插入获取的内容到数据库
+cursor.executemany(
+        """
+        INSERT INTO MOVIE (RANK, CHINESE_NAME, ENGLISH_NAME, DIRECTOR, MAIN_ACTORS, TIME, PLACE, TYPE, COMMENT) 
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)""",
+        result
+    )
+	
+db.commit()  #commit之后数据库才会改动
+cursor.close()
+db.close()
+```
+
+## Tips:
+
+1. 爬虫部分：由于页面显示千差万别，所以爬虫部分代码最开始不要有对内容太细化的处理。
+太细化的处理会导致某些小问题的出现，以至于爬虫不能正常进行。
+
+2. 数据库导入部分：数据库导入出现的错误大多就是编码错误，所以注意这些就行了。
+
