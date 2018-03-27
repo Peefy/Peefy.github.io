@@ -1,8 +1,6 @@
-# **Thanks for [the creator](http://yizeng.me) of this theme!** 
+## **Thanks for [the creator](http://yizeng.me) of this theme!** *Simple Texture Jekyll Theme*
 
-# Simple Texture Jekyll Theme
-
-[blog](https://peefy.github.io).
+### [Blog of Peefy](https://peefy.github.io).
 
 ## License
 
