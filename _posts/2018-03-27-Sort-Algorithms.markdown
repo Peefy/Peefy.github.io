@@ -66,4 +66,4 @@ Pancake排序   `O(n)`
 
 Stooge排序  `O(n^2.7)`   
 
-$$f(x)=x$$
+$$\bf{\beta = HT}$$
