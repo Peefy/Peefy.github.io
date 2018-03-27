@@ -17,7 +17,6 @@ group: navigation
     {% assign categories_list = sorted_categories %}
     {% include helpers/categories_list %}
 </ul>
-
 {% for category in sorted_categories %}
     <h3 id="{{ category | replace:' ','-' }}">{{ category }}</h3>
     <ul class="post-list">

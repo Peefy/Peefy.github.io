@@ -2,7 +2,7 @@
 
 # Simple Texture Jekyll Theme
 
-**Preview：** You can visit [my blog](https://bryceyang.github.io).
+**Preview：** You can visit [my blog](https://peefy.github.io).
 
 
 ![Screenshot - Home](assets/images/screenshots/home.png)
