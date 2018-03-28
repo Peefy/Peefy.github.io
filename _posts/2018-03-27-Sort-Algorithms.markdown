@@ -8,9 +8,9 @@ redirect_from:
   - /2018/03/27/
 ---
 
-## Sorting Algorithms（排序算法）
+# Sorting Algorithms（排序算法）
 
-### Fisrt
+## *Fisrt*
 
 冒泡排序 `O(n^2)`     
 
@@ -36,7 +36,7 @@ Gnome排序 `O(n^2)`
 
 图书馆排序 `O(nlgn)`
 
-### Second
+## *Second*
 
 选择排序 `O(n^2)`    
 
@@ -54,7 +54,7 @@ Intro排序  `O(nlgn)`
 
 Patience排序 `O(nlgn + k)`
 
-### Third
+## *Third*
 
 Bogo排序 `O(n*n!)`
 
@@ -66,7 +66,39 @@ Pancake排序   `O(n)`
 
 Stooge排序  `O(n^2.7)`   
 
-#### 冒泡排序 `O(n^2)`  
+### *冒泡排序* `O(n^2)`  
+
+```python
+def bubblesort(self, array : list) -> list:
+      '''
+      冒泡排序,时间复杂度`O(n^2)`
+
+      Args
+      ====
+      `array` : 排序前的数组
+
+      Return
+      ======
+      `sortedArray` : 使用冒泡排序排好的数组
+
+      Example
+      ===
+      ```python
+      >>> import sort
+      >>> A = [6, 5, 4, 3, 2, 1]
+      >>> sort.bubblesort(A)
+      >>> [1, 2, 3, 4, 5, 6]
+      ```
+      '''
+      nums = _deepcopy(array)
+      for i in range(len(nums) - 1):    
+          for j in range(len(nums) - i - 1):  
+              if nums[j] > nums[j + 1]:
+                  nums[j], nums[j + 1] = nums[j + 1], nums[j]
+      return nums
+```
+
+### *冒泡排序* `O(n^2)`  
 
 ```python
 def bubblesort(self, array : list) -> list:
