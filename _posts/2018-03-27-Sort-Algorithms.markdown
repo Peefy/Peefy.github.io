@@ -434,7 +434,7 @@ def bubblesort(self, array : list) -> list:
 ### *快速排序* 平均情况`O(nlgn)` 最差情况 `O(n^2)` 
 
 ```python
-        def partition(self, A : list, p : int, r : int):
+    def partition(self, A : list, p : int, r : int):
         '''
         快速排序的数组划分子程序
         '''
@@ -508,3 +508,6 @@ def bubblesort(self, array : list) -> list:
         '''
         return __stoogesort(A, 0, len(A) - 1)
 ```
+
+
+[Github Code](https://github.com/Peefy/CLRS_dugu_code-master/tree/master/src/dugulib)
