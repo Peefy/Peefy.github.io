@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python List"
+title: "用Python实现的链表List"
 description: "用Python实现的链表List"
 categories: [Python]
 tags: [python]
@@ -129,5 +129,6 @@ class List:
 
     def __reduce_length(self):
         self.__length -= 1
+
 
 ```
