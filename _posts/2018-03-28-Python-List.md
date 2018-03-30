@@ -59,6 +59,27 @@ class List:
             x = x.next
         return x
 
+    def compact_search(self, k):
+        '''
+        已经排序的链表中找出键值为k的链表节点元素，期望情况为`O(sqrt(n))`
+        '''
+        n = self.count()
+        i = self.head
+        while i != None and i.key > k:
+            num = _randint(0, n - 1)
+            j = self.head
+            for iterate in range(num):
+                j = j.next
+            if i.key < j.key and j.key <= k:
+                i = j
+                if i.key == k:
+                    return i
+            i = i.next
+        if i == None or i.key < k:
+            return None
+        else:
+            return i
+
     def insert(self, x):
         '''
         链表插入元素x
