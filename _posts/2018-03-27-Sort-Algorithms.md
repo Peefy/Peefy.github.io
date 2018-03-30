@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python实现的Sorting Algorithms/排序算法"
+title: "Python实现的 Sorting Algorithms/排序算法"
 description: "This is an introduction to sorting algorithms/这是一个排序算法的介绍"
 categories: [Python]
 tags: [python]

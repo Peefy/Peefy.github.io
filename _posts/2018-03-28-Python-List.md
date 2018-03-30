@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "用Python实现的链表List"
+title: "用Python实现的 链表List"
 description: "用Python实现的链表List"
 categories: [Python]
 tags: [python]
