@@ -153,3 +153,59 @@ class List:
 
 
 ```
+
+使用链表构造的栈和队列
+
+```python
+
+class QueueUsingList:
+    '''
+    使用链表构造的队列
+    '''
+    def __init__(self):
+        self.__list = List()
+        self.__length = 0
+
+    def enqueue(self, item):
+        self.__list.insert(item)
+        self.__length += 1
+
+    def dequeue(self):
+        x = self.__list.findtail()
+        self.__list.delete(x, x.key)
+        self.__length -= 1
+        return x.value
+
+    def count(self):
+        self.__length()
+
+    def all(self):
+        return self.__list.all()
+
+class StackUsingList:
+    '''
+    使用链表构造的栈
+    '''
+    def __init__(self):
+        self.__list = List()
+        self.__length = 0
+
+    def push(self, item):
+        self.__list.insert(item)
+        self.__length += 1
+
+    def pop(self):
+        x = self.__list.head
+        self.__list.delete(x, x.key)
+        self.__length -= 1
+        return x.value
+
+    def count(self):
+        self.__length()
+
+    def all(self):
+        return self.__list.all()
+
+```
+
+[Github Code](https://github.com/Peefy/CLRS_dugu_code-master/blob/master/src/chapter10)
