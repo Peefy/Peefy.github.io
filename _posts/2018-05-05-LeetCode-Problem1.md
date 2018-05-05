@@ -8,7 +8,7 @@ redirect_from:
   - /2018/05/05/
 ---
 
-<img src="https://github.com/Peefy/PeefyLeetCode/blob/master/doc/1.TwoSum/problem.png?raw=true"/>
+<img src="./img/problem1.png"/>
 
 ## C++ Solution
 
