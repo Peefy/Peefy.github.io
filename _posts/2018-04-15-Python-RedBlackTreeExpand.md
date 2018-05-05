@@ -5,7 +5,7 @@ description: "用Python实现红黑树数据结构的扩张"
 categories: [Python]
 tags: [python]
 redirect_from:
-  - /2018/04/07/
+  - /2018/04/15/
 ---
 
 [红黑树代码](https://peefy.github.io/blog/2018/04/11/Python-RedBlackTree/)
