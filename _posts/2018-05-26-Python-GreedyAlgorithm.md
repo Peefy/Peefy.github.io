@@ -322,8 +322,6 @@ redirect_from:
 
 ```python
 
-
-
 from __future__ import division, absolute_import, print_function
 from copy import deepcopy as _deepcopy
 
@@ -376,9 +374,9 @@ class HuffmanTree:
         if node is not None:
             if node.p is None:
                 return
-            if node.p.left.f == node.f:
+            if node.p.left == node:
                 self.__coding += '0'
-            if node.p.right.f == node.f:
+            if node.p.right == node:
                 self.__coding += '1'
             self.buildnodecodingformcharacter(node.p)
         
@@ -536,6 +534,7 @@ class HuffmanTreeBuilder:
         构造一个HuffmanTree
         '''
         return self.huffman(self.C, self.f)
+        
         
 
 ```
