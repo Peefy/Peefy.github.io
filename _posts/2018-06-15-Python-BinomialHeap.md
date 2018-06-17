@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "用Python实现二项树"
-description: "用Python实现的二项树"
+title: "用Python实现的二项堆"
+description: "用Python实现的二项堆"
 categories: [Python]
 tags: [python]
 redirect_from:
