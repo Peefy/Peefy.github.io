@@ -28,11 +28,11 @@ redirect_from:
 
 用到了不相交集合算法
 
-[不相交集合算法链接](https://github.com/Peefy/CLRS_dugu_code-master/blob/master/src/chapter21)
+[不相交集合算法链接](https://github.com/Peefy/IntroductionToAlgorithm.Python/blob/master/src/chapter21)
 
 最小生成树算法是基于图算法
 
-[图算法链接](https://github.com/Peefy/CLRS_dugu_code-master/blob/master/src/chapter22)
+[图算法链接](https://github.com/Peefy/IntroductionToAlgorithm.Python/blob/master/src/chapter22)
 
 ```python
 
@@ -162,4 +162,4 @@ else:
 
 ```
 
-[Github Code](https://github.com/Peefy/CLRS_dugu_code-master/blob/master/src/chapter23)
+[Github Code](https://github.com/Peefy/IntroductionToAlgorithm.Python/blob/master/src/chapter23)
