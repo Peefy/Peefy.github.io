@@ -20,7 +20,7 @@ redirect_from:
     </script>
 </head>
 
-行间公式
+我的行间公式
 
 $$ x=\frac{-b\pm\sqrt{b^2-4ac}}{2a} $$
 
