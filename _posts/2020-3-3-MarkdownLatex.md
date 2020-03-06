@@ -44,6 +44,6 @@ $$ x=\frac{-b\pm\sqrt{b^2-4ac}}{2a} $$
 
 公式示例：花体字母和希腊字母公式
 
-$$ {L}  = -\frac{{\text{1}}}{{\text{4}}}F^{\mu\nu}F_{\mu\nu} + \bar{\psi} \left(i{{D}} - m_{e} \right) \psi = -\frac{{\text{1}}}{{\text{4}}}F^{\mu\nu}F_{\mu\nu} + \bar{\psi} \left(i{\partial} - m_{e} \right) \psi  + J^{\mu}A_{\mu} $$
+$$ {L}  = 1/4F^{\mu\nu}F_{\mu\nu} + {\psi} \left(i{{D}} - m_{e} \right) \psi = 1/4F^{\mu\nu}F_{\mu\nu} + {\psi} \left(i{\partial} - m_{e} \right) \psi  + J^{\mu}A_{\mu} $$
 
 
