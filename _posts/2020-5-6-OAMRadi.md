@@ -64,26 +64,26 @@ $$
 &ensp;&ensp;&ensp;&ensp;求解上述狄拉克方程，可以得到电子波函数的具体表达式为：
 $$
 \begin{aligned}
-    {\psi _ \uparrow } & = {e^{i\left( {k_{z}z + \mathcal{E}t + m\varphi } \right)}}{e^{ - {{\bar r}^2} / 2}} \left[ {{\bar r}^m}L_n^m\left( {{{\bar r}^2}} \right)
+    {\psi _ \uparrow } & = {e^{i\left( {k_{z}z + \mathcal{E}t + m\varphi } \right)}}{e^{ - {{{\bar{r})}^2} / 2}} \left[ {{{\bar{r})}^m}L_n^m\left( {{{{\bar{r})}^2}} \right)
         \left(\begin{array}{c}   
               {\mathcal{E}}_{+} \\  
               0 \\  
               k_z \\  
               0 \\  
-            \end{array}\right) + \sqrt 2 i{e^{i\varphi }}{{\bar r}^{m + 1}}L_n^{m + 1}\left( {{{\bar r}^2}} \right)
+            \end{array}\right) + \sqrt 2 i{e^{i\varphi }}{{{\bar{r})}^{m + 1}}L_n^{m + 1}\left( {{{{\bar{r})}^2}} \right)
             \left(\begin{array}{c}   
               0 \\  
               0 \\  
               0 \\  
               \sqrt{B\left|e\right|} \\  
             \end{array}\right) \right]\\
-    {\psi _ \downarrow } & = {e^{i\left( {k_{z}z + \mathcal{E}t + m\varphi } \right)}}{e^{ - \bar r^2 / 2}} \left[ {\bar r^m}L_n^m\left( {\bar r^2} \right)
+    {\psi _ \downarrow } & = {e^{i\left( {k_{z}z + \mathcal{E}t + m\varphi } \right)}}{e^{ - {\bar{r})^2 / 2}} \left[ {{\bar{r})^m}L_n^m\left( {{\bar{r})^2} \right)
     \left(\begin{array}{c}   
               0 \\  
               \mathcal{E}_{+} \\  
               0 \\  
               -k_z \\  
-            \end{array}\right) - \sqrt 2 \left( {n + m} \right)i{e^{ - i\varphi }}{{\bar r}^{m - 1}}L_n^{m - 1}\left( {\bar r^2} \right)
+            \end{array}\right) - \sqrt 2 \left( {n + m} \right)i{e^{ - i\varphi }}{{{\bar{r})}^{m - 1}}L_n^{m - 1}\left( {{\bar{r})^2} \right)
             \left(\begin{array}{c}   
               0 \\  
               0 \\  
@@ -249,26 +249,26 @@ $$
 
 $$
 \begin{aligned}
-       & {\psi^*_f } = {e^{-i\left( {k'_{z}z - \mathcal{E}'t + m'\varphi } \right)}}{e^{ - {{\bar r}^2} / 2}} \left[ {{\bar r}^{m'}}L_{n'}^{m'}\left( {{{\bar r}^2}} \right)
+       & {\psi^*_f } = {e^{-i\left( {k'_{z}z - \mathcal{E}'t + m'\varphi } \right)}}{e^{ - {{{\bar{r})}^2} / 2}} \left[ {{{\bar{r})}^{m'}}L_{n'}^{m'}\left( {{{{\bar{r})}^2}} \right)
         \left(\begin{array}{c}   
               {\mathcal{E}'}_{+} \\  
               0 \\  
               k'_z \\  
               0 \\  
-            \end{array}\right)^{\rm{T}} - \sqrt 2 i{e^{-i\varphi }}{{\bar r}^{m' + 1}}L_{n'}^{m' + 1}\left( {{{\bar r}^2}} \right)
+            \end{array}\right)^{\rm{T}} - \sqrt 2 i{e^{-i\varphi }}{{{\bar{r})}^{m' + 1}}L_{n'}^{m' + 1}\left( {{{{\bar{r})}^2}} \right)
             \left(\begin{array}{c}   
               0 \\  
               0 \\  
               0 \\  
               \sqrt{B\left|e\right|} \\  
             \end{array}\right)^{\rm{T}}  \right]\\
-    & {\psi_i} = {e^{i\left( {k_{z}z - \mathcal{E}t + m\varphi } \right)}}{e^{ - {{\bar r}^2} / 2}} \left[ {{\bar r}^m}L_n^m\left( {{{\bar r}^2}} \right)
+    & {\psi_i} = {e^{i\left( {k_{z}z - \mathcal{E}t + m\varphi } \right)}}{e^{ - {{{\bar{r})}^2} / 2}} \left[ {{{\bar{r})}^m}L_n^m\left( {{{{\bar{r})}^2}} \right)
         \left(\begin{array}{c}   
               {\mathcal{E}}_{+} \\  
               0 \\  
               k_z \\  
               0 \\  
-            \end{array}\right) + \sqrt 2 i{e^{i\varphi }}{{\bar r}^{m + 1}}L_n^{m + 1}\left( {{{\bar r}^2}} \right)
+            \end{array}\right) + \sqrt 2 i{e^{i\varphi }}{{{\bar{r})}^{m + 1}}L_n^{m + 1}\left( {{{{\bar{r})}^2}} \right)
             \left(\begin{array}{c}   
               0 \\  
               0 \\  
@@ -288,8 +288,8 @@ $$
 \begin{aligned}
     \mathcal{Q}_{fi} & = e \times {\sqrt {\frac{1 }{{{{4}}{\pi ^2}\omega _0 }}} 
 {J_\ell}\left( {{k_ \bot }r'} \right)
-{e^{i\left( {k_ \parallel z' + \ell\varphi' -\omega_0t } \right)}}} \times {e^{-i\left( {k'_{z}z - \mathcal{E}'t + m'\varphi } \right)}}{e^{ - {{\bar r}^2} / 2}} \times {e^{i\left( {k_{z}z - \mathcal{E}t + m\varphi } \right)}}{e^{ - {{\bar r}^2} / 2}} \\
-& = e \sqrt {\frac{1 }{{{{4}}{\pi ^2}\omega _0 }}} {J_\ell}\left( {{k_ \bot }r'} \right) e^{ - {{\bar r}^2}}
+{e^{i\left( {k_ \parallel z' + \ell\varphi' -\omega_0t } \right)}}} \times {e^{-i\left( {k'_{z}z - \mathcal{E}'t + m'\varphi } \right)}}{e^{ - {{{\bar{r})}^2} / 2}} \times {e^{i\left( {k_{z}z - \mathcal{E}t + m\varphi } \right)}}{e^{ - {{{\bar{r})}^2} / 2}} \\
+& = e \sqrt {\frac{1 }{{{{4}}{\pi ^2}\omega _0 }}} {J_\ell}\left( {{k_ \bot }r'} \right) e^{ - {{{\bar{r})}^2}}
  e^{i(k_z z -k'_z z - k_\parallel z')} e^{i( m\varphi - m'\varphi-\ell\varphi' )} e^{-i(\mathcal{E} - \mathcal{E}' - \omega_0)t}
 \end{aligned}
 $$
@@ -298,12 +298,12 @@ $$
 
 $$
 \begin{aligned}
-    & \mathcal{A} = {{\bar r}^{m}}L_{n}^{m}\left( {{{\bar r}^2}} \right){\mathcal{E}}_{+} \\
-    & \mathcal{A}^* = {{\bar r}^{m'}}L_{n'}^{m'}\left( {{{\bar r}^2}} \right){\mathcal{E}}'_{+} \\
-    & \mathcal{C} = {{\bar r}^{m}}L_{n}^{m}\left( {{{\bar r}^2}} \right) k_z \\
-    & \mathcal{C}^* = {{\bar r}^{m'}}L_{n'}^{m'}\left( {{{\bar r}^2}} \right) k'_z\\
-    & \mathcal{D} = \sqrt 2 i{e^{i\varphi }}{{\bar r}^{m + 1}}L_n^{m + 1}\left( {{{\bar r}^2}} \right) \sqrt{B|e|}\\
-    & \mathcal{D}^* = - \sqrt 2 i{e^{-i\varphi }}{{\bar r}^{m' + 1}}L_{n'}^{m' + 1}\left( {{{\bar r}^2}} \right) \sqrt{B|e|}\\
+    & \mathcal{A} = {{{\bar{r})}^{m}}L_{n}^{m}\left( {{{{\bar{r})}^2}} \right){\mathcal{E}}_{+} \\
+    & \mathcal{A}^* = {{{\bar{r})}^{m'}}L_{n'}^{m'}\left( {{{{\bar{r})}^2}} \right){\mathcal{E}}'_{+} \\
+    & \mathcal{C} = {{{\bar{r})}^{m}}L_{n}^{m}\left( {{{{\bar{r})}^2}} \right) k_z \\
+    & \mathcal{C}^* = {{{\bar{r})}^{m'}}L_{n'}^{m'}\left( {{{{\bar{r})}^2}} \right) k'_z\\
+    & \mathcal{D} = \sqrt 2 i{e^{i\varphi }}{{{\bar{r})}^{m + 1}}L_n^{m + 1}\left( {{{{\bar{r})}^2}} \right) \sqrt{B|e|}\\
+    & \mathcal{D}^* = - \sqrt 2 i{e^{-i\varphi }}{{{\bar{r})}^{m' + 1}}L_{n'}^{m' + 1}\left( {{{{\bar{r})}^2}} \right) \sqrt{B|e|}\\
 \end{aligned}
 $$
 
