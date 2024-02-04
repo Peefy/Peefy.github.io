@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[99005],{16252:s=>{s.exports=JSON.parse('{"label":"GitOps","permalink":"/blog/tags/git-ops","allTagsPath":"/blog/tags","count":1}')}}]);

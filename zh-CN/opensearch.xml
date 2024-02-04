@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>KCL programming language.</ShortName>
+  <Description>Search KCL programming language.</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="16" height="16" type="image/x-icon">https://kcl-lang.github.io/zh-CN/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://kcl-lang.github.io/zh-CN/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://kcl-lang.github.io/zh-CN/opensearch.xml" />
+  <moz:SearchForm>https://kcl-lang.github.io/zh-CN/</moz:SearchForm>
+</OpenSearchDescription>

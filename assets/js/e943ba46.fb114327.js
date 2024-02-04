@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[95680],{43602:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/biweekly-newsletter/page/3","page":3,"postsPerPage":2,"totalPages":4,"totalCount":7,"previousPage":"/blog/tags/biweekly-newsletter/page/2","nextPage":"/blog/tags/biweekly-newsletter/page/4","blogDescription":"Blog","blogTitle":"Blog"}')}}]);
